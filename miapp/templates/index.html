@@ -1,0 +1,15 @@
+<!-- COMENTARIO EN HTML...  -->
+{% extends 'layout.html' %}
+
+{% block title %}
+    {{titulo}}
+{% endblock title %}
+
+{% block content %}
+{% comment 'Datos de la página Index' %}
+    En esta página se mostrará los INTEGRANTES
+{% endcomment %}
+    <h1 class="title"> INTEGRANTES </h1>
+    {% include 'listado_estudiantesregistrados.html' with encabezado="Estudiantes Registrados" %}
+    <p>Año: 2021</p>
+{% endblock content %}

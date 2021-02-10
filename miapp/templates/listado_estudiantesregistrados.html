@@ -1,0 +1,13 @@
+<br>
+<hr>
+<br>
+
+<ul>
+    {% for estudiante in estudiantes %}
+        <li>
+            {{forloop.counter}}.{{estudiante}}
+        </li>    
+    {% empty %}
+        <p>No hay {{encabezado}}</p>    
+    {% endfor %}
+</ul>
